@@ -2,10 +2,16 @@
   "dependencies": {
     "@babel/preset-env": "7.0.0",
     "@babel/preset-flow": "7.0.0",
-    "react": "*"
+    "react": "*",
+    "snyk": "^1.189.0"
   },
   "jest": {
     "automock": true,
     "testEnvironment": "node"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
