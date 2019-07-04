@@ -22,9 +22,15 @@
     "jest-validate": "^23.6.0",
     "micromatch": "^2.3.11",
     "pretty-format": "^23.6.0",
-    "realpath-native": "^1.0.2"
+    "realpath-native": "^1.0.2",
+    "snyk": "^1.189.0"
   },
   "engines": {
     "node": ">= 6"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
