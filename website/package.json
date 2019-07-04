@@ -13,12 +13,16 @@
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version"
+    "rename-version": "docusaurus-rename-version",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "docusaurus": "^1.6.0"
+    "docusaurus": "^1.6.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "crowdin-cli": "^0.3.0"
-  }
+  },
+  "snyk": true
 }
