@@ -5,7 +5,8 @@
   "main": "build/jest.js",
   "dependencies": {
     "import-local": "^2.0.0",
-    "jest-cli": "^23.6.0"
+    "jest-cli": "^23.6.0",
+    "snyk": "^1.316.1"
   },
   "bin": {
     "jest": "./bin/jest.js"
@@ -44,5 +45,10 @@
     "testing",
     "typescript",
     "watch"
-  ]
+  ],
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
