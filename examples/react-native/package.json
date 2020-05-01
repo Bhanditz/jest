@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "react": "16.6.0-alpha.8af6728",
-    "react-native": "0.57.3"
+    "react-native": "0.57.3",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/preset-env": "*",
@@ -22,5 +25,6 @@
     "transform": {
       "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
     }
-  }
+  },
+  "snyk": true
 }
