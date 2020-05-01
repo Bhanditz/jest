@@ -29,7 +29,8 @@
     "slash": "^2.0.0",
     "strip-bom": "3.0.0",
     "write-file-atomic": "^2.1.0",
-    "yargs": "^12.0.2"
+    "yargs": "^12.0.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "jest-environment-jsdom": "^23.4.0",
@@ -40,5 +41,10 @@
   },
   "engines": {
     "node": ">= 6"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
