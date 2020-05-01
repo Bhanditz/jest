@@ -19,12 +19,18 @@
     "jest-message-util": "^23.4.0",
     "jest-snapshot": "^23.6.0",
     "jest-util": "^23.4.0",
-    "pretty-format": "^23.6.0"
+    "pretty-format": "^23.6.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "jest-runtime": "^23.6.0"
   },
   "engines": {
     "node": ">= 6"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
