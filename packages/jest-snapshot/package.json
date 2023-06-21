@@ -17,7 +17,7 @@
     "mkdirp": "^0.5.1",
     "natural-compare": "^1.4.0",
     "pretty-format": "^23.6.0",
-    "semver": "^5.5.0"
+    "semver": "^7.5.2"
   },
   "devDependencies": {
     "prettier": "^1.13.4"
