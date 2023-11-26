@@ -9,7 +9,7 @@
   "main": "build/index.js",
   "dependencies": {
     "jest-regex-util": "^23.3.0",
-    "jest-snapshot": "^23.6.0"
+    "jest-snapshot": "^24.0.0"
   },
   "engines": {
     "node": ">= 6"
