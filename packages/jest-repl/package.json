@@ -8,7 +8,7 @@
   "license": "MIT",
   "main": "build/index.js",
   "dependencies": {
-    "jest-config": "^23.6.0",
+    "jest-config": "^30.0.0",
     "jest-runtime": "^23.6.0",
     "jest-validate": "^23.6.0",
     "repl": "^0.1.3",
